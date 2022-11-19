@@ -11,10 +11,10 @@ public class Smiley extends JLabel {
 	public static final String RED = "red";
 	public static final String GREEN = "green";
 	public static final String BLUE = "blue";
-	public static String color = BLUE;
+	public static String color = RED;
 	
 	Smiley(){
-		super(loadIcon("_01_static_smiley_blues/smiley_"+ color +".jpg"));
+		super(loadIcon("_02_static_smiley_blues/smiley_"+ color +".jpg"));
 	}
 	
 	private static Icon loadIcon(String fileName) {
