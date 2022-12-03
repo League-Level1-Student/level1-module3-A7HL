@@ -17,7 +17,28 @@ public class Car{
 	}
 	void display(){
 	    Frogger.window.fill(0,255,0);
-	    Frogger.window.rect(xPos , yPos,  size, 50);
+	    Frogger.window.rect(xPos , yPos,  size, 100);
+	}
+	void moveLeft() {
+		xPos-=spd;
+		if(xPos<-100) {
+			xPos=Frogger.WIDTH+100;
+		}
+	}
+	void moveRight() {
+		xPos+=spd;
+		if(xPos>Frogger.WIDTH) {
+			xPos=-100;
+		}
+	}
+	public int getX() {
+		return xPos;
+	}
+	public int getY() {
+		return yPos;
+	}
+	public int getSize() {
+		return size;
 	}
 	
 }
